@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 | 李自达老师课题组(ZidaLab)研究生招募</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e40af', // blue-800
+                        secondary: '#0ea5e9', // sky-500
+                        accent: '#f59e0b', // amber-500
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 隐藏滚动条但保留滚动功能 */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-secondary selection:text-white">
+
+    <!-- Hero Section -->
+    <header class="relative bg-gradient-to-br from-primary via-blue-700 to-secondary text-white overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <defs>
+                    <pattern id="hexagons" width="50" height="43.4" patternUnits="userSpaceOnUse" patternTransform="scale(2)">
+                        <polygon points="24.8,22 37.3,29.2 37.3,43.7 24.8,50.9 12.3,43.7 12.3,29.2" fill="none" stroke="#ffffff" stroke-width="1"></polygon>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#hexagons)"></rect>
+            </svg>
+        </div>
+        
+        <div class="relative max-w-6xl mx-auto px-6 py-24 text-center">
+            <div class="inline-block px-4 py-1 rounded-full bg-white/20 text-sm font-semibold tracking-wider mb-6 backdrop-blur-sm border border-white/30">
+                2026 FALL RECRUITMENT
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                2026 | 李自达老师课题组<br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">研究生招募 (ZidaLab)</span>
+            </h1>
+            <p class="text-lg md:text-xl font-light max-w-3xl mx-auto mb-8 leading-relaxed opacity-90">
+                又是一年上岸季，首先恭喜各位准深大研究生！<br>
+                ZidaLab现面向即将入学的 <strong>2026级生物医学工程</strong> 研究生招新。<br>
+                我们是个朝气蓬勃、团结友爱的团队，期待各位的加入！
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#contact" class="px-8 py-3 bg-white text-primary font-bold rounded-full shadow-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    立即投递简历
+                </a>
+                <a href="https://zidalab.github.io/" target="_blank" class="px-8 py-3 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white/10 transition-all duration-300">
+                    访问课题组主页
+                </a>
+            </div>
+        </div>
+        
+        <!-- Wave Divider -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.85,130.32,201.39,112.5,263.2,96.88,310.27,65.84,321.39,56.44Z" fill="#f9fafb"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- 一、课题组简介 -->
+        <section id="about" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 inline-block relative">
+                    一、课题组简介
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-secondary rounded-full mt-2"></span>
+                </h2>
+            </div>
+            
+            <!-- 课题组合照 -->
+            <div class="mb-12 rounded-2xl overflow-hidden shadow-lg border border-gray-100 relative group bg-gray-200 flex items-center justify-center min-h-[300px] md:min-h-[400px]">
+                <img src="images/group_photo.jpg" alt="课题组合照" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="z-0 flex flex-col items-center text-gray-400" style="display: none;">
+                    <i class="fa-solid fa-users text-5xl mb-2"></i>
+                    <span>[课题组合照 Placeholder (将图片放入 images/group_photo.jpg)]</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                <!-- 我们是谁 -->
+                <div class="md:col-span-2 space-y-6 text-gray-600 leading-relaxed text-justify">
+                    <h3 class="text-xl font-bold text-primary flex items-center gap-2">
+                        <i class="fa-solid fa-microscope"></i> 我们是谁？
+                    </h3>
+                    <p>
+                        李自达老师课题组长期聚焦临床体外诊断核心领域，围绕生物医学检测技术开展创新性研究。团队以微流控芯片设计与微纳加工技术为研究基石，深度融合人工智能算法等跨学科方法，重点攻克微量样本检测、高精度生物标记物分析等生物医学领域关键技术瓶颈。
+                    </p>
+                    <p>
+                        课题组目前在三个维度持续产出创新成果：<br>
+                        <span class="inline-block mt-2">（1）基于单分子检测的超灵敏免疫和基因检测体系开发；</span><br>
+                        <span class="inline-block mt-1">（2）高通量单细胞组学分析系统研发；</span><br>
+                        <span class="inline-block mt-1">（3）微流控芯片集成即时诊断平台构建。</span>
+                    </p>
+                    <p class="font-medium text-gray-800 border-l-4 border-secondary pl-4 bg-blue-50 py-2">
+                        研究成果可应用于癌症早筛、遗传病诊断和精准医疗等多个临床场景。
+                    </p>
+                </div>
+
+                <!-- 导师卡片 -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="bg-gray-100 h-48 flex items-center justify-center relative">
+                        <!-- Placeholder for PI Image -->
+                        <img src="images/pi_photo.jpg" alt="李自达老师" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="text-gray-400 text-sm flex flex-col items-center" style="display: none;">
+                            <i class="fa-solid fa-user-tie text-5xl mb-2"></i>
+                            
+                        </div>
+                    </div>
+                    <div class="p-6 relative text-center md:text-left">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-1">李自达</h3>
+                        <p class="text-secondary font-medium mb-4">副教授、博导 <br><span class="text-sm text-gray-500">深圳大学生物医学工程学院</span></p>
+                        
+                        <div class="space-y-3 text-sm text-gray-600 mt-6 text-left">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-graduation-cap text-primary mt-1 w-4"></i>
+                                <div>
+                                    <p class="font-bold">2013 - 2018</p>
+                                    <p>密歇根大学安娜堡分校 · 机械工程博士</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-university text-primary mt-1 w-4"></i>
+                                <div>
+                                    <p class="font-bold">2008 - 2012</p>
+                                    <p>中国科学技术大学 · 机械工程学士</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 代表作与成绩 -->
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- 论文 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-book-open text-secondary"></i> 代表性论文
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-4 bg-gray-100 p-2 rounded inline-block">
+                        <i class="fa-solid fa-info-circle"></i> 第一作者均为课题组学生。期刊均为中科院一区TOP期刊。
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-blue-200 transition-colors">
+                            <p class="font-semibold text-gray-800 text-sm">Flow-LAMP: Label-free Digital LAMP using Scatter-based Flow Cytometry on Vortex-Generated Polydisperse Gel Beads</p>
+                            <p class="text-xs text-gray-500 mt-1">Yuchong Zheng, Wanjun Yao, Zerui Wu, Liqun He, Weidong Zheng,* and Zida Li*. <span class="text-primary font-bold">Analytical Chemistry, 2025</span></p>
+                        </li>
+                        <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-blue-200 transition-colors">
+                            <p class="font-semibold text-gray-800 text-sm">StratoLAMP: Label-free, multiplex digital loop-mediated isothermal amplification based on visual stratification of precipitate</p>
+                            <p class="text-xs text-gray-500 mt-1">金美池、丁婧怡、陈佳兆、李自达 等。 <span class="text-primary font-bold">PNAS, 2024 (IF=9.58)</span></p>
+                        </li>
+                        <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-blue-200 transition-colors">
+                            <p class="font-semibold text-gray-800 text-sm">imgPico：Image activated pico-injection for single cell analysis</p>
+                            <p class="text-xs text-gray-500 mt-1">赵展陶、李自达 等。 <span class="text-primary font-bold">Talanta, 2024 (IF = 6.1)</span></p>
+                        </li>
+                        <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-blue-200 transition-colors">
+                            <p class="font-semibold text-gray-800 text-sm">CoID-LAMP: Color-encoded, intelligent digital LAMP for multiplexed nucleic acid quantification</p>
+                            <p class="text-xs text-gray-500 mt-1">武凯、方琪、李自达 等。 <span class="text-primary font-bold">Analytical Chemistry, 2023 (IF = 7.4)</span></p>
+                        </li>
+                        <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:border-blue-200 transition-colors">
+                            <p class="font-semibold text-gray-800 text-sm">Combinatorial perturbation sequencing on single cells using microwell-based droplet random pairing</p>
+                            <p class="text-xs text-gray-500 mt-1">谢润、李自达 等。 <span class="text-primary font-bold">Biosensors and Bioelectronics, 2023 (IF = 12.6)</span></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 成绩与就业 -->
+                <div class="space-y-8">
+                    <!-- 获奖 -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-trophy text-accent"></i> 学生获奖情况
+                        </h3>
+                        <ul class="space-y-3 text-sm text-gray-600 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1"></i> <span class="font-bold text-gray-800">26届毕业生陈佳兆荣获国家奖学金。</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1"></i> 24届学生金美池荣获深圳大学“名校深造奖学金”。</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1"></i> 23届学生李东豪获得校级“腾讯奖学金”(前2%)。</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1"></i> 22届学生陈琳喆毕业论文被评为深圳大学首届“百篇优秀硕士学位论文”。</li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-500 mt-1"></i> 2021年，课题组两位本科毕业生毕业课题均获得优秀（前20%），其中金美池论文入选百篇优秀本科毕业论文(前2%)。</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 就业 -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-briefcase text-indigo-500"></i> 就业情况
+                        </h3>
+                        <div class="relative pl-6 border-l-2 border-indigo-200 space-y-6">
+                            <div class="relative">
+                                <div class="absolute -left-[31px] top-1 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white"></div>
+                                <h4 class="font-bold text-gray-800">2025年</h4>
+                                <p class="text-sm text-gray-600 mt-1">达普生物技术微流控工程师、深圳大学辅导员等。</p>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute -left-[31px] top-1 w-4 h-4 bg-indigo-500 rounded-full border-4 border-white"></div>
+                                <h4 class="font-bold text-gray-800">2024年</h4>
+                                <p class="text-sm text-gray-600 mt-1">康奈尔大学全奖博士、华为单板硬件工程师、北京大学深圳医院医学装备部。</p>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute -left-[31px] top-1 w-4 h-4 bg-indigo-400 rounded-full border-4 border-white"></div>
+                                <h4 class="font-bold text-gray-800">2023年</h4>
+                                <p class="text-sm text-gray-600 mt-1">深圳亚辉龙系统集成/芯片设计工程师、杭州霆科微流控研发工程师。</p>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute -left-[31px] top-1 w-4 h-4 bg-indigo-300 rounded-full border-4 border-white"></div>
+                                <h4 class="font-bold text-gray-800">往届优秀</h4>
+                                <p class="text-sm text-gray-600 mt-1">普门试剂研发工程师、麦科田系统工程师等。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 二、研究方向 -->
+        <section id="research" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 inline-block relative">
+                    二、研究方向
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-secondary rounded-full mt-2"></span>
+                </h2>
+                <p class="text-gray-500 mt-4">我们在研究什么？</p>
+            </div>
+
+            <div class="space-y-16">
+                <!-- 方向 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col xl:flex-row border border-gray-100">
+                    <div class="xl:w-1/2 p-8 lg:p-12">
+                        <div class="inline-block px-3 py-1 bg-blue-100 text-primary rounded-full text-sm font-bold mb-4">Direction 1</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">单分子数字核酸检测新方法</h3>
+                        <div class="text-gray-600 space-y-4 text-justify text-sm leading-relaxed">
+                            <p><strong>打破高端医疗检测的壁垒：</strong>传统的核酸检测（如大家熟知的传染病核酸检测或基因筛查）往往依赖极其昂贵的荧光标记试剂和笨重复杂的光学仪器。这就导致很多高端诊断技术只能停留在三甲医院或是专业实验室。</p>
+                            <p>我们的研究目标是“化繁为简”，利用独特的微反应体系，让扩增产物产生肉眼可见的沉淀，或者通过极其简单的图像拍摄就能完成分析。简单来说，我们正在开发更便宜、更便携、甚至无需荧光仪器的“傻瓜式”精准检测技术，希望未来能将早期癌症筛查、重大传染病确诊等高端医疗服务普及到基层诊所甚至家庭。</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/2 bg-gray-50 p-6 flex items-center justify-center border-t xl:border-t-0 xl:border-l border-gray-100">
+                        <div class="w-full h-64 md:h-80 bg-gray-200 rounded-xl flex items-center justify-center text-gray-400 border-2 border-dashed border-gray-300 relative overflow-hidden group">
+                            <img src="images/direction1.png" alt="单分子数字核酸检测" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="text-center z-0" style="display: none;">
+                                <i class="fa-solid fa-image text-4xl mb-2"></i>
+                                <p></p>
+                                <p class="text-xs px-4 mt-2 max-w-sm">图 1. (a)以沉淀副产物为检测特征... (b)基于非均一体积液滴... (c)基于液滴配对融合...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 方向 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col xl:flex-row-reverse border border-gray-100">
+                    <div class="xl:w-1/2 p-8 lg:p-12">
+                        <div class="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold mb-4">Direction 2</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">单细胞组学检测新方法</h3>
+                        <div class="text-gray-600 space-y-4 text-justify text-sm leading-relaxed">
+                            <p><strong>探寻生命的最基本单元：</strong>如果把人体的组织结构比作一杯混合果汁，传统的检测方法只能测出果汁的总体味道，却无法告诉你里面具体有多少颗草莓、多少块芒果。而“单细胞测序技术”就像是一台超级显微镜，能把果汁里的每一个细胞单独挑出来进行全面分析。</p>
+                            <p>这对于寻找极其稀少的早期癌细胞、理解肿瘤为什么会耐药、以及精准研发靶向新药有着决定性的作用。我们课题组的专长，就是利用微流控芯片技术（一种在微米尺度下精准操控液体的技术），为这台“超级显微镜”打造更高效、更智能的“流水线”，解决目前单细胞分析中成本高昂、处理效率低、珍贵细胞易丢失等实际痛点。</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/2 bg-gray-50 p-6 flex items-center justify-center border-t xl:border-t-0 xl:border-r border-gray-100">
+                        <div class="w-full h-64 md:h-80 bg-gray-200 rounded-xl flex items-center justify-center text-gray-400 border-2 border-dashed border-gray-300 relative overflow-hidden group">
+                            <img src="images/direction2.png" alt="单细胞组学检测" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <div class="text-center z-0" style="display: none;">
+                                <i class="fa-solid fa-image text-4xl mb-2"></i>
+                                <p></p>
+                                <p class="text-xs px-4 mt-2 max-w-sm">图 2. (a)图像实时激发实现细胞的选择性建库... (b)利用螺旋形通道聚焦...等</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 三、学生培养体系 -->
+        <section id="training" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 inline-block relative">
+                    三、学生培养体系
+                    <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-secondary rounded-full mt-2"></span>
+                </h2>
+                <p class="text-gray-500 mt-4">在 ZidaLab，你将获得什么？</p>
+            </div>
+
+            <!-- 培养列表 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                <!-- 系统性培养 -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                        <span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span> 系统性科研能力培养
+                    </h3>
+                    <p class="text-gray-600 mb-6 text-sm">我们专注课题攻关与知识提升，更致力于锻造核心竞争力：</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-primary mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">独立科研素养</strong>
+                                <p class="text-sm text-gray-500 mt-1">从文献调研到实验设计，培养发现问题、解决问题的全链条思维。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-primary mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">职场黄金技能</strong>
+                                <p class="text-sm text-gray-500 mt-1">信息检索、逻辑思维、高效执行、跨学科协作——这些正是名企争抢的复合型人才特质。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-primary mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">职业发展加速度</strong>
+                                <p class="text-sm text-gray-500 mt-1">往届学生均去往心仪单位（名校博士、大厂工程师等）。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 硬核技能 -->
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                        <span class="bg-gray-800 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span> 硬核技能锻造场
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <div class="text-secondary font-bold mb-1"><i class="fa-solid fa-search"></i> 信息超能力</div>
+                            <p class="text-xs text-gray-500">每周文献精读+组会研讨，解锁前沿领域密码</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <div class="text-secondary font-bold mb-1"><i class="fa-solid fa-brain"></i> 思维进化营</div>
+                            <p class="text-xs text-gray-500">严谨实验设计+数据深度挖掘，培养学术侦探思维</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <div class="text-secondary font-bold mb-1"><i class="fa-solid fa-flask"></i> 实战实验室</div>
+                            <p class="text-xs text-gray-500">从细胞操作到算法建模，动脑更动手</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <div class="text-secondary font-bold mb-1"><i class="fa-solid fa-comments"></i> 表达能量站</div>
+                            <p class="text-xs text-gray-500">每周汇报+学术会议演练，打造专业表达范式</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 团队生活 相册 (横向滑动) -->
+            <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2 text-center">温暖有光的科研共同体</h3>
+                <p class="text-center text-gray-500 text-sm mb-8"><i class="fa-solid fa-arrows-left-right"></i> 左右滑动查看更多精彩瞬间</p>
+
+                <!-- 学术生态圈 相册 -->
+                <div class="mb-10">
+                    <h4 class="font-bold text-primary mb-4 border-l-4 border-primary pl-2">🌱 学术生态圈 (会议与交流)</h4>
+                    <div class="flex overflow-x-auto gap-4 pb-4 no-scrollbar snap-x snap-mandatory">
+                        <!-- 照片项 -->
+                        <div class="snap-center shrink-0 w-64 h-48 bg-gray-200 rounded-xl relative overflow-hidden flex items-center justify-center group">
+                            <img src="images/academic_1.jpg" alt="参加学术会议" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="text-gray-400 text-sm flex flex-col items-center" style="display: none;">
+                                <i class="fa-solid fa-image text-3xl mb-2"></i>
+                            </div>
+                            <div class="absolute bottom-0 w-full bg-black/50 text-white text-xs text-center py-2 backdrop-blur-sm z-20">参加学术会议</div>
+                        </div>
+                        <div class="snap-center shrink-0 w-64 h-48 bg-gray-200 rounded-xl relative overflow-hidden flex items-center justify-center group">
+                            <img src="images/academic_2.jpg" alt="广州实验室交流" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="text-gray-400 text-sm flex flex-col items-center" style="display: none;">
+                                <i class="fa-solid fa-image text-3xl mb-2"></i>
+                            </div>
+                            <div class="absolute bottom-0 w-full bg-black/50 text-white text-xs text-center py-2 backdrop-blur-sm z-20">广州实验室交流</div>
+                        </div>
+                        <div class="snap-center shrink-0 w-64 h-48 bg-gray-200 rounded-xl relative overflow-hidden flex items-center justify-center group">
+                            <img src="images/academic_3.jpg" alt="华大基因库交流" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="text-gray-400 text-sm flex flex-col items-center" style="display: none;">
+                                <i class="fa-solid fa-image text-3xl mb-2"></i>
+                            </div>
+                            <div class="absolute bottom-0 w-full bg-black/50 text-white text-xs text-center py-2 backdrop-blur-sm z-20">华大基因库交流</div>
+                        </div>
+                        <div class="snap-center shrink-0 w-64 h-48 bg-gray-200 rounded-xl relative overflow-hidden flex items-center justify-center group">
+                            <img src="images/academic_4.jpg" alt="学生口头报告" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="text-gray-400 text-sm flex flex-col items-center" style="display: none;">
+                                <i class="fa-solid fa-image text-3xl mb-2"></i>
+                            </div>
+                            <div class="absolute bottom-0 w-full bg-black/50 text-white text-xs text-center py-2 backdrop-blur-sm z-20">学生口头报告</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 活力生活派 & 仪式感日常 相册 -->
+                <div>
+                    <h4 class="font-bold text-accent mb-4 border-l-4 border-accent pl-2">🎉 活力生活与仪式感 (团建与日常)</h4>
+                    <div class="flex overflow-x-auto gap-4 pb-4 no-scrollbar snap-x snap-mandatory">
+                        <div class="snap-center shrink-0 w-64 h-48 bg-gray-200 rounded-xl relative overflow-hidden flex items-center justify-center group">
+                            <img src="images/life_1.jpg" alt="梧桐山登顶" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="text-gray-400 text-sm flex flex-col items-center" style="display: none;"><i class="fa-solid fa-image text-3xl mb-2"></i></div>
+                            <div class="absolute bottom-0 w-full bg-black/50 text-white text-xs text-center py-2 backdrop-blur-sm z-20">梧桐山登顶</div>
+                        </div>
+                        <div class="snap-center shrink-0 w-64 h-48 bg-gray-200 rounded-xl relative overflow-hidden flex items-center justify-center group">
+                            <img src="images/life_2.jpg" alt="桔钓沙出游" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="text-gray-400 text-sm flex flex-col items-center" style="display: none;"><i class="fa-solid fa-image text-3xl mb-2"></i></div>
+                            <div class="absolute bottom-0 w-full bg-black/50 text-white text-xs text-center py-2 backdrop-blur-sm z-20">桔钓沙出游</div>
+                        </div>
+                        <div class="snap-center shrink-0 w-64 h-48 bg-gray-200 rounded-xl relative overflow-hidden flex items-center justify-center group">
+                            <img src="images/life_3.jpg" alt="节日主题聚餐" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="text-gray-400 text-sm flex flex-col items-center" style="display: none;"><i class="fa-solid fa-image text-3xl mb-2"></i></div>
+                            <div class="absolute bottom-0 w-full bg-black/50 text-white text-xs text-center py-2 backdrop-blur-sm z-20">节日主题聚餐</div>
+                        </div>
+                        <div class="snap-center shrink-0 w-64 h-48 bg-gray-200 rounded-xl relative overflow-hidden flex items-center justify-center group">
+                            <img src="images/life_4.jpg" alt="每月生日趴" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="text-gray-400 text-sm flex flex-col items-center" style="display: none;"><i class="fa-solid fa-image text-3xl mb-2"></i></div>
+                            <div class="absolute bottom-0 w-full bg-black/50 text-white text-xs text-center py-2 backdrop-blur-sm z-20">每月生日趴</div>
+                        </div>
+                        <div class="snap-center shrink-0 w-64 h-48 bg-gray-200 rounded-xl relative overflow-hidden flex items-center justify-center group">
+                            <img src="images/life_5.jpg" alt="教师节庆祝" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="text-gray-400 text-sm flex flex-col items-center" style="display: none;"><i class="fa-solid fa-image text-3xl mb-2"></i></div>
+                            <div class="absolute bottom-0 w-full bg-black/50 text-white text-xs text-center py-2 backdrop-blur-sm z-20">教师节庆祝</div>
+                        </div>
+                        <div class="snap-center shrink-0 w-64 h-48 bg-gray-200 rounded-xl relative overflow-hidden flex items-center justify-center group">
+                            <img src="images/life_6.jpg" alt="K歌才艺绽放" class="w-full h-full object-cover absolute inset-0 z-10" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="text-gray-400 text-sm flex flex-col items-center" style="display: none;"><i class="fa-solid fa-image text-3xl mb-2"></i></div>
+                            <div class="absolute bottom-0 w-full bg-black/50 text-white text-xs text-center py-2 backdrop-blur-sm z-20">K歌才艺绽放</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 联系方式 CTA -->
+        <section id="contact" class="pb-16">
+            <div class="bg-primary rounded-3xl p-10 text-center text-white relative overflow-hidden shadow-2xl">
+                <!-- Decorative elements -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-48 h-48 bg-secondary opacity-20 rounded-full transform -translate-x-1/2 translate-y-1/2"></div>
+                
+                <div class="relative z-10">
+                    <h2 class="text-3xl font-bold mb-4">准备好加入我们了吗？</h2>
+                    <p class="text-blue-100 mb-8 max-w-2xl mx-auto">
+                        有意愿深入了解课题组的同学，请联系李自达老师。<br>
+                        来信请务必附上以下材料：
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                        <div class="bg-white/10 backdrop-blur-md px-6 py-3 rounded-lg border border-white/20 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-file-pdf text-2xl"></i> 个人简历 (CV)
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md px-6 py-3 rounded-lg border border-white/20 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-file-lines text-2xl"></i> 本科成绩单
+                        </div>
+                    </div>
+
+                    <a href="mailto:zidali@szu.edu.cn" class="inline-flex items-center gap-2 px-8 py-4 bg-accent hover:bg-yellow-400 text-gray-900 font-bold rounded-full shadow-lg transition-transform transform hover:scale-105">
+                        <i class="fa-solid fa-envelope"></i> 发送邮件联系导师<br>zidali@szu.edu.cn
+                    </a>
+                    
+                    <p class="mt-8 text-sm text-blue-200 opacity-80">
+                        再次祝贺各位26级研究生上岸~ 期待在深大相见！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 ZidaLab - 深圳大学生物医学工程学院. All rights reserved.</p>
+            <a href="https://zidalab.github.io/" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-globe"></i> 访问课题组官方网站
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
